@@ -1,8 +1,8 @@
-# Part semantic aware latent space navigation for controlled regeneration of 3D point clouds
+# 3DLatNav: Navigating generative latent spaces for semantic aware 3D object manipulation
 
 * * *
 
-**This is the official code repository of the CVPR submission - Paper ID 1440**
+**This is the official code repository of the ECCV submission - Paper ID 3744**
 
 ### Abstract
 
@@ -69,26 +69,6 @@ Pre-Trained models are available [here](https://drive.google.com/drive/folders/1
         | DPM_chair_objects.pt  | Final_Repository/models/Diffusion/Trained_Models/DPM_chair_objects.pt    |
         
         
-* **Example-2** : If you want to edit pointclouds with the **3DAAE Model** for the **airplane class** you will need the following: 
-
-        | Dataset              | Path to Include                            |
-        |----------------------|--------------------------------------------|
-        | airplane_parts.npy   | Final_Repository/data/airplane_parts.npy   |
-        | airplane_objects.npy | Final_Repository/data/airplane_objects.npy |
-
-
-
-        | Trained Model              | Path to Find and Include                                                          |
-        |----------------------------|--------------------------------------------------------------------------|
-        | AAE_airplane_parts/E.pth   | Final_Repository/models/AAE/Trained_Models/AAE_chair_parts/E.pth         |
-        | AAE_airplane_parts/G.pth   | Final_Repository/models/AAE/Trained_Models/AAE_chair_parts/G.pth         |
-        | airplane.pth               | Final_Repository/models/Part_Segment/Trained_Models/chair.pth            |
-        | latent_con_model.pth       | Final_Repository/models/Part_Segment/Trained_Models/latent_con_model.pth |
-        | AAE_airplane_objects/E.pth | Final_Repository/models/AAE/Trained_Models/AAE_airplane_objects/E.pth    |
-        | AAE_airplane_objects/G.pth | Final_Repository/models/AAE/Trained_Models/AAE_airplane_objects/G.pth    |        
-
-
-* * *
 
 ### Editing Framework
 
