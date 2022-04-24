@@ -70,7 +70,7 @@ G_car.eval()
 
 print("model_load_succesful")
 
-def encode(chair):
+def encode_car(chair):
     chair=pc_normalize(chair)
     av=np.reshape(chair, (config['z_size'],3,1)).T
     codes=torch.from_numpy(av).to('cuda')
@@ -78,7 +78,7 @@ def encode(chair):
         X_rec = E_car(codes.float())
     return X_rec[0].cpu().numpy()
 
-def reconstruct_from_code(code):
+def reconstruct_from_code_car(code):
     av=np.reshape(code, (config['z_size'],1,1)).T
     codes=torch.from_numpy(av).to('cuda')
     with torch.no_grad():
